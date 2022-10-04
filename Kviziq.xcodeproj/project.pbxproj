@@ -14,6 +14,9 @@
 		EB194B6528EAB863003BBCD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB194B6428EAB863003BBCD6 /* Assets.xcassets */; };
 		EB194B6828EAB863003BBCD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB194B6628EAB863003BBCD6 /* LaunchScreen.storyboard */; };
 		EB194B7028EAE67F003BBCD6 /* KvizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB194B6F28EAE67F003BBCD6 /* KvizController.swift */; };
+		EB1DA47528EC9F94007BE2EF /* Kviz.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1DA47428EC9F94007BE2EF /* Kviz.swift */; };
+		EB1DA47728ECA97C007BE2EF /* Farby.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1DA47628ECA97C007BE2EF /* Farby.swift */; };
+		EB1DA47928ECAFDE007BE2EF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1DA47828ECAFDE007BE2EF /* Extensions.swift */; };
 		EB2168F728EB641F00B0F25F /* Kviz 5.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2168BF28EB641F00B0F25F /* Kviz 5.json */; };
 		EB2168F828EB641F00B0F25F /* Kviz 4.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2168C028EB641F00B0F25F /* Kviz 4.json */; };
 		EB2168F928EB641F00B0F25F /* Kviz 3.json in Resources */ = {isa = PBXBuildFile; fileRef = EB2168C128EB641F00B0F25F /* Kviz 3.json */; };
@@ -81,6 +84,9 @@
 		EB194B6728EAB863003BBCD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB194B6928EAB863003BBCD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB194B6F28EAE67F003BBCD6 /* KvizController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KvizController.swift; sourceTree = "<group>"; };
+		EB1DA47428EC9F94007BE2EF /* Kviz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kviz.swift; sourceTree = "<group>"; };
+		EB1DA47628ECA97C007BE2EF /* Farby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farby.swift; sourceTree = "<group>"; };
+		EB1DA47828ECAFDE007BE2EF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EB2168BF28EB641F00B0F25F /* Kviz 5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Kviz 5.json"; sourceTree = "<group>"; };
 		EB2168C028EB641F00B0F25F /* Kviz 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Kviz 4.json"; sourceTree = "<group>"; };
 		EB2168C128EB641F00B0F25F /* Kviz 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Kviz 3.json"; sourceTree = "<group>"; };
@@ -174,7 +180,10 @@
 				EB194B5D28EAB862003BBCD6 /* SceneDelegate.swift */,
 				EB194B5F28EAB862003BBCD6 /* PickerController.swift */,
 				EB194B6F28EAE67F003BBCD6 /* KvizController.swift */,
+				EB1DA47628ECA97C007BE2EF /* Farby.swift */,
+				EB1DA47428EC9F94007BE2EF /* Kviz.swift */,
 				EB194B6128EAB862003BBCD6 /* Main.storyboard */,
+				EB1DA47828ECAFDE007BE2EF /* Extensions.swift */,
 				EB194B6628EAB863003BBCD6 /* LaunchScreen.storyboard */,
 				EB194B6428EAB863003BBCD6 /* Assets.xcassets */,
 				EB194B6928EAB863003BBCD6 /* Info.plist */,
@@ -379,8 +388,11 @@
 			files = (
 				EB194B6028EAB862003BBCD6 /* PickerController.swift in Sources */,
 				EB194B5C28EAB862003BBCD6 /* AppDelegate.swift in Sources */,
+				EB1DA47528EC9F94007BE2EF /* Kviz.swift in Sources */,
 				EB194B5E28EAB862003BBCD6 /* SceneDelegate.swift in Sources */,
+				EB1DA47728ECA97C007BE2EF /* Farby.swift in Sources */,
 				EB194B7028EAE67F003BBCD6 /* KvizController.swift in Sources */,
+				EB1DA47928ECAFDE007BE2EF /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

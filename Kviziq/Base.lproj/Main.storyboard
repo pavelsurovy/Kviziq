@@ -80,22 +80,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogE-hs-UkT" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="573.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="623.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TJN-wz-UP5">
-                                                <rect key="frame" x="20" y="30" width="374" height="225"/>
+                                                <rect key="frame" x="20" y="80" width="374" height="225"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="225" id="9n6-b5-tkv"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="otázka" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDr-dS-vNL">
-                                                <rect key="frame" x="20" y="285" width="374" height="25.5"/>
+                                                <rect key="frame" x="20" y="335" width="374" height="25.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYN-98-KsA">
-                                                <rect key="frame" x="20" y="340.5" width="374" height="31"/>
+                                                <rect key="frame" x="20" y="390.5" width="374" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
@@ -103,7 +103,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGL-qg-SpD">
-                                                <rect key="frame" x="20" y="391.5" width="374" height="31"/>
+                                                <rect key="frame" x="20" y="441.5" width="374" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
@@ -111,7 +111,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caG-oy-dw5">
-                                                <rect key="frame" x="20" y="442.5" width="374" height="31"/>
+                                                <rect key="frame" x="20" y="492.5" width="374" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
@@ -119,7 +119,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoR-FR-Ks6">
-                                                <rect key="frame" x="20" y="503.5" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="553.5" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="T3n-xL-4M7"/>
                                                 </constraints>
@@ -135,7 +135,7 @@
                                             <constraint firstItem="TJN-wz-UP5" firstAttribute="leading" secondItem="ogE-hs-UkT" secondAttribute="leading" constant="20" id="5C7-RP-9nb"/>
                                             <constraint firstItem="aoR-FR-Ks6" firstAttribute="leading" secondItem="ogE-hs-UkT" secondAttribute="leading" constant="20" id="DLI-AB-Z8c"/>
                                             <constraint firstAttribute="trailing" secondItem="tGL-qg-SpD" secondAttribute="trailing" constant="20" id="EGc-UF-ZxO"/>
-                                            <constraint firstItem="TJN-wz-UP5" firstAttribute="top" secondItem="ogE-hs-UkT" secondAttribute="top" constant="30" id="FRU-Lv-XSs"/>
+                                            <constraint firstItem="TJN-wz-UP5" firstAttribute="top" secondItem="ogE-hs-UkT" secondAttribute="top" constant="80" id="FRU-Lv-XSs"/>
                                             <constraint firstAttribute="bottom" secondItem="aoR-FR-Ks6" secondAttribute="bottom" constant="30" id="JYr-Aa-2iw"/>
                                             <constraint firstAttribute="trailing" secondItem="aoR-FR-Ks6" secondAttribute="trailing" constant="20" id="NGv-dq-wAu"/>
                                             <constraint firstItem="cDr-dS-vNL" firstAttribute="leading" secondItem="ogE-hs-UkT" secondAttribute="leading" constant="20" id="ONR-Bd-Tde"/>
