@@ -29,6 +29,12 @@ class PickerController: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         kvizPicker.delegate = self
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let kvizController = segue.destination as? KvizController {
+            kvizController.kviz = vybratyKviz
+        }
+    }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

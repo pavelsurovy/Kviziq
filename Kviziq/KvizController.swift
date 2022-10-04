@@ -14,9 +14,13 @@ class KvizController: UIViewController {
     @IBOutlet var odpovedeBtn: [UIButton]!
     @IBOutlet weak var nextQuestionBtn: UIButton!
     
+    var kviz = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(kviz)
+        
         // Do any additional setup after loading the view.
     }
     
