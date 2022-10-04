@@ -18,6 +18,7 @@ class KvizController: UIViewController {
     var kviz = ""
     var aktualnaOtazka = 0
     var spravnaOdpoved = ""
+    var skore = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,10 @@ class KvizController: UIViewController {
                 odpoved.backgroundColor = Farby.zelena
             }
         }
+        
+        if sender.currentTitle!.contains(spravnaOdpoved) {
+            skore += 1
+        }
     }
     
     
@@ -43,7 +48,31 @@ class KvizController: UIViewController {
         aktualnaOtazka += 1
         
         if aktualnaOtazka >= otazky!.count {
-            print("koniec")
+            
+            let endKviz = UIAlertController(
+                title: "Koniec kvízu",
+                message: "Zajraj si ďalšiu hru!",
+                preferredStyle: .alert)
+            
+            endKviz.addAction(UIAlertAction(
+                title: "OK",
+                style: .default,
+                handler: { _ in
+                    self.navigationController?.popViewController(animated: true)
+                }
+            ))
+            
+            endKviz.addAction(UIAlertAction(
+                title: "NOK",
+                style: .destructive,
+                handler: { _ in
+                    self.navigationController?.popViewController(animated: true)
+                }
+            ))
+            
+            present(endKviz, animated: true)
+            
+            print(skore)
             aktualnaOtazka = 0
         } else {
             nacitajOtazku()
@@ -64,7 +93,7 @@ class KvizController: UIViewController {
         spravnaOdpoved = otazky![aktualnaOtazka].odpovede[0]
         
         image.image = UIImage(named: otazky![aktualnaOtazka].obrazok)
-        otazkaLbl.text = otazky![aktualnaOtazka].otazka
+        otazkaLbl.text = "\(aktualnaOtazka + 1). \(otazky![aktualnaOtazka].otazka)"
         
         guard let rozhadzaneOdpovede = otazky?[aktualnaOtazka].odpovede.shuffled() else { return }
         
