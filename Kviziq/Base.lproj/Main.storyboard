@@ -86,12 +86,14 @@
                                                 <rect key="frame" x="20" y="80" width="374" height="225"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="225" id="9n6-b5-tkv"/>
+                                                    <constraint firstAttribute="width" secondItem="TJN-wz-UP5" secondAttribute="height" multiplier="374:225" id="zdn-XJ-uGK"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="otázka" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDr-dS-vNL">
                                                 <rect key="frame" x="20" y="335" width="374" height="25.5"/>
+                                                <color key="tintColor" systemColor="tintColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYN-98-KsA">
@@ -157,7 +159,7 @@
                                 <constraints>
                                     <constraint firstItem="ogE-hs-UkT" firstAttribute="leading" secondItem="D47-BP-e1y" secondAttribute="leading" id="Xoj-m3-y1a"/>
                                     <constraint firstItem="ogE-hs-UkT" firstAttribute="bottom" secondItem="D47-BP-e1y" secondAttribute="bottom" id="mku-cK-c7y"/>
-                                    <constraint firstItem="ogE-hs-UkT" firstAttribute="top" secondItem="D47-BP-e1y" secondAttribute="top" id="nAd-Rf-i0u"/>
+                                    <constraint firstItem="ogE-hs-UkT" firstAttribute="top" secondItem="hEL-c9-tSO" secondAttribute="top" id="nAd-Rf-i0u"/>
                                     <constraint firstItem="ogE-hs-UkT" firstAttribute="trailing" secondItem="D47-BP-e1y" secondAttribute="trailing" id="vDi-Wy-Cnr"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="D47-BP-e1y"/>
@@ -215,6 +217,9 @@
         <image name="background" width="540" height="960"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -16,6 +16,8 @@ class PickerController: UIViewController, UIPickerViewDataSource, UIPickerViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        overrideUserInterfaceStyle = .light
+        
         let path = Bundle.main.resourcePath!
         let items = try! FileManager.default.contentsOfDirectory(atPath: path)
         
