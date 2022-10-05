@@ -14,7 +14,6 @@ class KvizController: UIViewController {
     @IBOutlet var odpovedeBtn: [UIButton]!
     @IBOutlet weak var nextQuestionBtn: UIButton!
     
-    let abeceda = ["a)", "b)", "c)"]
     var otazky: [Kviz]?
     var kviz = ""
     var aktualnaOtazka = 0
@@ -44,7 +43,6 @@ class KvizController: UIViewController {
             skore += 1
         }
     }
-    
     
     @IBAction func nextQuestion(_ sender: UIButton) {
         aktualnaOtazka += 1
@@ -90,10 +88,10 @@ class KvizController: UIViewController {
         
         guard let rozhadzaneOdpovede = otazky?[aktualnaOtazka].odpovede.shuffled() else { return }
         
-        for (index, odpovedBtn) in odpovedeBtn.enumerated() {
+        for odpovedBtn in odpovedeBtn {
             odpovedBtn.enabledButtonStyle()
-            
-            odpovedBtn.setTitle("\(abeceda[index]) " + rozhadzaneOdpovede[index], for: .normal)
+                        
+            odpovedBtn.setTitle("\(UnicodeScalar(UnicodeScalar("a").value + UInt32(odpovedBtn.tag))!)) \(rozhadzaneOdpovede[odpovedBtn.tag])", for: .normal)
         }
     }
 }
