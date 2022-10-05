@@ -51,7 +51,7 @@ class KvizController: UIViewController {
             
             let endKviz = UIAlertController(
                 title: "Koniec kvízu",
-                message: "Zajraj si ďalšiu hru!",
+                message: "Zahraj si ďalšiu hru!",
                 preferredStyle: .alert)
             
             endKviz.addAction(UIAlertAction(
